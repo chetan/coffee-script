@@ -69,7 +69,7 @@ end
       tar_io.write(contents)
     end
 
-    contents = File.read("extras/coffee-script.js")
+    contents = File.read("lib/coffee_script/coffee-script.js")
     path = "lib/coffee_script/coffee-script.js"
     pkg.add_file_simple(path, 0644, contents.size) do |tar_io|
       tar_io.write(contents)
