@@ -1,0 +1,13 @@
+how to update this gem:
+
+git co master
+# npm install uglify-js (only if next step doesn't work)
+bin/cake build:browser
+cp -a extras/coffee-script.js .
+git reset --hard
+git co gem
+mv coffee-script.js lib/coffee-script
+
+# then just add and commit
+git add -u
+git ci -m "version bump"
